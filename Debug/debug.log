@@ -1,0 +1,120 @@
+[0801/222949.136:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0801/222951.206:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/222951.612:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223052.332:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/IXQjWE0Ajyw (0)
+[0801/223053.914:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223053.942:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223254.516:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/ (0)
+[0801/223254.705:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0801/223255.315:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223255.424:INFO:CONSOLE(0)] "Refused to display 'https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dpassive%26hl%3Den%26action_handle_signin%3Dtrue%26next%3D%252Fsignin_passive%26app%3Ddesktop&passive=true' in a frame because it set 'X-Frame-Options' to 'deny'.", source: https://www.youtube.com/ (0)
+[0801/223255.550:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223256.226:INFO:CONSOLE(15)] "chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.", source: https://s.ytimg.com/yts/jsbin/network-vflNZTggj/network.js (15)
+[0801/223256.730:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/ (0)
+[0801/223256.848:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0801/223257.430:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223257.745:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223258.297:INFO:CONSOLE(15)] "chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.", source: https://s.ytimg.com/yts/jsbin/network-vflNZTggj/network.js (15)
+[0801/223258.727:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0801/223258.728:WARNING:quota_manager.cc(1637)] No storage quota provided in QuotaSettings.
+[0801/223306.613:WARNING:angle_platform_impl.cc(59)] compileToBinary(228): 
+C:\fakepath(65,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(87,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0801/223316.217:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/G1wsCworwWk (0)
+[0801/223317.945:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223318.043:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223357.441:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/G1wsCworwWk (0)
+[0801/223357.839:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223357.848:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0801/223412.080:WARNING:audio_sync_reader.cc(177)] ASR: No room in socket buffer.: The pipe is being closed. (0xE8)
+[0801/223413.888:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0801/223413.905:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/170231.322:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0802/170232.771:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/170232.817:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/203828.088:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/203829.124:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/203829.142:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/203853.103:WARNING:audio_sync_reader.cc(177)] ASR: No room in socket buffer.: The pipe is being closed. (0xE8)
+[0802/203853.292:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/203853.300:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/204023.319:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/204024.402:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/204024.412:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/204227.071:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/221454.343:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0802/221455.050:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/221455.290:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/221847.577:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0802/221848.270:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/221848.535:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/222517.186:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0802/222517.829:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/222518.115:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/222545.291:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/222738.251:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/222739.110:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/222739.405:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/225351.286:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/225352.196:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/225352.532:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/225459.499:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/225721.037:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0802/225722.299:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/225722.342:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/225817.129:ERROR:broker_win.cc(57)] Error reading broker pipe: The pipe has been ended. (0x6D)
+[0802/225900.758:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/225902.085:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/225902.143:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/230128.270:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/233845.223:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/233846.247:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/233846.549:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/234253.421:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/234254.300:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/234254.611:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/234809.337:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/234810.523:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/234810.546:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/234940.799:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0802/235108.616:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0802/235109.432:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0802/235109.754:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/091223.577:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/091224.353:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/091224.582:INFO:CONSOLE(1)] "'webkitURL' is deprecated. Please use 'URL' instead.", source:  (1)
+[0803/091224.646:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/092127.916:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/092128.943:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/092129.001:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/092241.788:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0803/092316.807:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/092317.958:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/092317.998:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/092537.140:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0803/093330.118:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/lphlAxj4RaA (0)
+[0803/093331.266:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/093331.343:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/093346.760:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0803/093431.276:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/093432.276:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/093432.537:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/093649.140:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0803/100501.893:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/100503.085:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/100503.425:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/100556.370:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0803/100907.705:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/100908.620:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/100908.887:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/100925.514:ERROR:broker_win.cc(134)] Error sending sync broker message
+[0803/101113.572:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/101114.747:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/101114.770:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/101759.699:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/101800.617:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/101800.891:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/104531.395:INFO:CONSOLE(0)] "Error parsing header X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube: insecure reporting URL for secure page at character position 22. The default protections will be applied.", source: https://www.youtube.com/embed/Zr47lHRHvjo (0)
+[0803/104532.345:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0803/104532.670:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
