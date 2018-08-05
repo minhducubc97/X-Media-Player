@@ -1,7 +1,7 @@
 # X-Media-Player
 A customized media player with eye-catching design that can perform basic operations of a typical window media player and some extra functionalities.
 ### Design
-![alt text](https://github.com/minhducubc97/X-Media-Player/blob/master/Design/InitialView.PNG" =200x150)
+![alt text](https://github.com/minhducubc97/X-Media-Player/blob/master/Design/InitialView.PNG"){:height="200px" width="150px"}
 &nbsp;&nbsp;&nbsp;*X Media Player initial view when opened.*
 ![alt text](https://github.com/minhducubc97/X-Media-Player/blob/master/Design/InAction.PNG" =200x150)
 &nbsp;&nbsp;&nbsp;&nbsp;*X Media Player playing a movie.*
