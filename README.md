@@ -29,10 +29,12 @@ X Media Player can perform basic operation of a Window Media Player:
 - Create playlist for user
 - Set speed to play the media
 - Go fullscreen
+- Enhance visual by fading out controls when in full screen mode
+- Show tooltips when necessary
 
 ### 2. Extra:
 
-X Media Player's extra feature is its ability to work with Youtube videos. After received the Youtube link typed in by user, the player will be able to:
+X Media Player's extra feature is its ability to work with Youtube videos. By clicking the Youtube icon on the top right corner, there will be a textbox appear where the user can type in the link to the Youtube video. After received the Youtube link typed in by user, the player will be able to:
 - Play the specified Youtube video inside the Media Player.
 - Download the video directly from Youtube.
 
