@@ -13,7 +13,7 @@ A customized media player with eye-catching design that can perform basic operat
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/Playlist.PNG" height="250"/>
 
-&nbsp;&nbsp;*Figure 3: X Media Player operating with playlist.*
+&nbsp;*Figure 3: X Media Player operating with playlist.*
 <br/><br/>
 
 ## Functionalities:
