@@ -13,7 +13,7 @@ A customized media player with eye-catching design that can perform basic operat
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/Playlist.PNG" height="250"/>
 
-*Figure 3: X Media Player operating with playlist.*
+&nbsp;&nbsp;*Figure 3: X Media Player operating with playlist.*
 <br/><br/>
 
 ## Functionalities:
@@ -52,6 +52,6 @@ The libraries used in this project:
 - [NReco](https://www.nrecosite.com/)
 - [YoutubeExplode](https://www.tyrrrz.me/Projects/YoutubeExplode)
 
-## Contact:
+## Source code:
 
 If you would like to see my source code, please send me an email at ngminhduc20111997@gmail.com
