@@ -32,7 +32,9 @@ X Media Player can perform basic operation of a Window Media Player:
 
 ### 2. Extra:
 
-X Media Player's extra feature is its ability to stream Youtube videos. After received the Youtube link typed in by user, the player will catch embed link from Youtube and play in its environment. The user will also have the option to download the Youtube video to his computer.
+X Media Player's extra feature is its ability to work with Youtube videos. After received the Youtube link typed in by user, the player will be able to:
+- Play the specified Youtube video inside the Media Player.
+- Download the video directly from Youtube.
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/StreamYoutube.PNG" height="250"/>
 
