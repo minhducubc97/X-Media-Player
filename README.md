@@ -8,7 +8,7 @@ A customized media player with eye-catching design that can perform basic operat
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/InAction.PNG" height="250"/>
 
-&nbsp;&nbsp;&nbsp;*Figure 2: X Media Player playing a movie.*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Figure 2: X Media Player playing a movie.*
 <br/><br/>
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/Playlist.PNG" height="250"/>
@@ -38,3 +38,12 @@ X Media Player's extra feature is its ability to stream Youtube videos. After re
 
 *Figure 4: X Media Player streaming Youtube video.*
 
+## Specifications:
+
+The project is developed in WPF with MVVM Light Framework, .NET Framework 4.6.1.
+The libraries used in this project:
+- [AngleSharp](https://anglesharp.github.io/)
+- [CefSharp](https://cefsharp.github.io/)
+- [MVVMLightLibs](http://www.mvvmlight.net/)
+- [NReco](https://www.nrecosite.com/)
+- [YoutubeExplode](https://www.tyrrrz.me/Projects/YoutubeExplode)
