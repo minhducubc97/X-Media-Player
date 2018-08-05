@@ -3,17 +3,17 @@ A customized media player with eye-catching design that can perform basic operat
 ## Design:
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/InitialView.PNG" height="250"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*X Media Player initial view when opened.*
+*Figure 1: X Media Player initial view when opened.*
 <br/><br/>
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/InAction.PNG" height="250"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*X Media Player playing a movie.*
+&nbsp;*Figure 2: X Media Player playing a movie.*
 <br/><br/>
 
 <img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/Playlist.PNG" height="250"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*X Media Player operating with playlist.*
+*Figure 3: X Media Player operating with playlist.*
 <br/><br/>
 
 ## Functionalities:
@@ -33,3 +33,7 @@ X Media Player can perform basic operation of a Window Media Player:
 ### 2. Extra:
 
 X Media Player's extra feature is its ability to stream Youtube videos. After received the Youtube link typed in by user, the player will catch embed link from Youtube and play in its environment. The user will also have the option to download the Youtube video to his computer.
+<img src="https://github.com/minhducubc97/X-Media-Player/blob/master/Design/StreamYoutube.PNG" height="250"/>
+
+*Figure 4: X Media Player streaming Youtube video.*
+
