@@ -1,0 +1,255 @@
+﻿<Window x:Class="WindowMediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:localViewModel="clr-namespace:WindowMediaPlayer.ViewModel"
+        xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:command="http://www.galasoft.ch/mvvmlight"
+        mc:Ignorable="d ignore"
+        Height="500"
+        Width="686"
+        
+        Title="X Media Player"
+        Name="myMainWindow"
+        Icon="./Resources/Red_X_Symbol.png"
+        DataContext="{Binding Main, Source={StaticResource Locator}}"
+        WindowStyle="{Binding WindowStyle0}"
+        WindowState="{Binding WindowState0}">
+
+    <interactivity:Interaction.Triggers>
+        <interactivity:EventTrigger EventName="Closing">
+            <command:EventToCommand Command="{Binding WindowClosing}" PassEventArgsToCommand="True" />
+        </interactivity:EventTrigger>
+    </interactivity:Interaction.Triggers>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid x:Name="LayoutRoot" SizeChanged="LayoutRoot_SizeChanged">
+
+        <Grid.LayoutTransform>
+            <ScaleTransform x:Name="ApplicationScaleTransform"
+                        CenterX="0"
+                        CenterY="0"
+                        ScaleX="{Binding ElementName=myMainWindow, Path=ScaleValue}"
+                        ScaleY="{Binding ElementName=myMainWindow, Path=ScaleValue}" />
+        </Grid.LayoutTransform>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.ColumnSpan="2" Grid.RowSpan="4" Source="/Resources/background.jpg" Stretch="Fill">
+        </Image>
+
+        <Grid Name="topPanel" Grid.Row="0" Background="{StaticResource SlightlyBlack}" Grid.ColumnSpan="2" Opacity="{Binding TopPanelVisibility}">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="MouseEnter">
+                    <interactivity:InvokeCommandAction Command="{Binding ShadowEffectFadeIn}"/>
+                </interactivity:EventTrigger>
+                <interactivity:EventTrigger EventName="MouseLeave">
+                    <interactivity:InvokeCommandAction Command="{Binding ShadowEffectFadeOut}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <localViewModel:CustomButton Grid.Column="1" Width="30" Height="30" Command="{Binding FindAudio}" ImageSource="/Resources/open.png" ImageSourceHover="/Resources/openHover.png" ImageSourcePressed="/Resources/openPressed.png" ImageSourceDisable="/Resources/openDisable.png" Visibility="{Binding MediaVisibility}">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Open new Media file.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+            <localViewModel:CustomButton Grid.Column="2" Width="30" Height="30" Command="{Binding Playlist}" ImageSource="/Resources/File.png" ImageSourceHover="/Resources/FileHover.png" ImageSourcePressed="/Resources/FilePressed.png" ImageSourceDisable="/Resources/FileDisable.png" Visibility="{Binding MediaVisibility}">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Open your favorite playlist.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+            <localViewModel:CustomButton Grid.Column="3" Width="30" Height="30" Command="{Binding SetSpeed}" ImageSource="/Resources/runningman.png" ImageSourceHover="/Resources/runningmanHover.png" ImageSourcePressed="/Resources/runningmanPressed.png" ImageSourceDisable="/Resources/runningmanDisable.png" Visibility="{Binding MediaVisibility}">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Set player speed.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+            <localViewModel:CustomButton x:Name="fullScreenButton" Grid.Column="4" Width="30" Height="30" Command="{Binding FullScreen}" ImageSource="{Binding FullScreenNormal}" ImageSourceHover="{Binding FullScreenHover}" ImageSourcePressed="{Binding FullScreenPressed}" Visibility="{Binding MediaVisibility}">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Enter Fullscreen mode.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+            <localViewModel:CustomButton x:Name="fullScreenButton2" Grid.Column="1" Width="30" Height="30" Command="{Binding FullScreen}" ImageSource="{Binding FullScreenNormal}" ImageSourceHover="{Binding FullScreenHover}" ImageSourcePressed="{Binding FullScreenPressed}" Visibility="{Binding YoutubeVisibility}">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Enter Fullscreen mode.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+            <StackPanel Grid.Column="5" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0"  Visibility="{Binding YoutubeVisibility}">
+                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center"  Foreground="Red" FontStyle="Italic" Style="{StaticResource ErrorStyle}" Visibility="{Binding ErrorVisibility}">Not valid Youtube link!</TextBlock>
+                <TextBox Width="250" Height="20" Text="{Binding Link}" HorizontalAlignment="Left" Margin="10,0,0,0" Background="LightGray"></TextBox>
+                <localViewModel:CustomButton Width="30" Height="30" Margin="8,0,0,0"  Command="{Binding ValidateLink}" ImageSource="/Resources/go.png" ImageSourceHover="/Resources/goHover.png" ImageSourcePressed="/Resources/goPressed.png"></localViewModel:CustomButton>
+            </StackPanel>
+            <localViewModel:CustomButton Grid.Column="6" Width="30" Height="30" Command="{Binding YoutubeMode}" ImageSource="/Resources/youtube.png" ImageSourceHover="/Resources/youtubeHover.png" ImageSourcePressed="/Resources/youtubePressed.png">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Turn into Youtube Mode.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Background="Black" Visibility="{Binding ShowPlaylist}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding ListOfMedia}" Background="Black" SelectedIndex="{Binding SelectedIndex}">
+                <interactivity:Interaction.Triggers>
+                    <interactivity:EventTrigger EventName="MouseDoubleClick">
+                        <interactivity:InvokeCommandAction Command="{Binding PlayNewMedia}"/>
+                    </interactivity:EventTrigger>
+                </interactivity:Interaction.Triggers>
+                <ListView.Resources>
+                    <DataTemplate x:Key="IconTemplate">
+                        <Grid Background="{StaticResource DarkGray}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Width="50" Height="50" Source="{Binding IconImage}"/>
+                        </Grid>
+                    </DataTemplate>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter Property="Background" Value="DarkRed" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListView.Resources>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn CellTemplate="{StaticResource IconTemplate}" Width="70">
+                            <GridViewColumn.Header>
+                                <TextBlock FontSize="{StaticResource FontSizeGlobal}">Preview</TextBlock>
+                            </GridViewColumn.Header>
+                        </GridViewColumn>
+                        <GridViewColumn Width="180">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Width="170" >
+                                        <TextBlock TextWrapping="Wrap" FontSize="9" Text="{Binding Title}" Foreground="White"  Margin="0,0,10,0"/>
+                                        <TextBlock FontSize="7" Foreground="Red" Text="{Binding MediaDuration, StringFormat= {}Duration: {0}}" Margin="0,5,0,0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                            <GridViewColumn.Header>
+                                <TextBlock FontSize="{StaticResource FontSizeGlobal}">File Name</TextBlock>
+                            </GridViewColumn.Header>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <localViewModel:CustomButton Grid.Row="1" Command="{Binding AddMedia}" ImageSource="/Resources/plus.png" Width="20" Height="20" ImageSourceHover="/Resources/plusHover.png" ImageSourcePressed="/Resources/plusPressed.png" ImageSourceDisable="/Resources/plusDisable.png" IsEnabled="{Binding IsAddMediaEnabled}"></localViewModel:CustomButton>
+            <localViewModel:CustomButton Grid.Row="1" Grid.Column="1" Command="{Binding RemoveMedia}" Height="20" Width="20" ImageSource="/Resources/subtract.png" ImageSourceHover="/Resources/subtractHover.png" ImageSourcePressed="/Resources/subtractPressed.png" ImageSourceDisable="/Resources/subtractDisable.png" IsEnabled="{Binding IsRemoveMediaEnabled}"></localViewModel:CustomButton>
+        </Grid>
+
+        <ContentControl Name="media" Content="{Binding mediaPlayer}" Grid.Row="1" Grid.ColumnSpan="{Binding MediaSpan}" Grid.Column="{Binding MediaColumn}">
+        </ContentControl>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2" Background="{StaticResource BlackGrayBackground}" Opacity="{Binding TopPanelVisibility}">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="MouseEnter">
+                    <interactivity:InvokeCommandAction Command="{Binding ShadowEffectFadeIn}"/>
+                </interactivity:EventTrigger>
+                <interactivity:EventTrigger EventName="MouseLeave">
+                    <interactivity:InvokeCommandAction Command="{Binding ShadowEffectFadeOut}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="25,0,10,0" Orientation="Horizontal" Visibility="{Binding MediaVisibility}">
+                <TextBlock Foreground="White" VerticalAlignment="Center" Text="{Binding MainInstruction}"></TextBlock>
+                <Slider localViewModel:SliderDragBehaviors.DragCompletedCommand="{Binding DragCompletedCommand}"  Style="{StaticResource ProgressSlider}" Margin="10,0,0,0" Width="160" VerticalAlignment="Center" Minimum="0" Maximum="{Binding MaximumMediaLength}" Value="{Binding MediaProgress}" IsMoveToPointEnabled="True"></Slider>
+            </StackPanel>
+
+            <localViewModel:CustomButton Grid.Column="1" Margin="4" ImageSource="/Resources/slowerButton.jpg" ImageSourceHover="/Resources/slowerButtonHover.jpg" ImageSourcePressed="/Resources/slowerButtonPressed.jpg" Command="{Binding MoveBackwards}" Visibility="{Binding MediaVisibility}"></localViewModel:CustomButton>
+            <localViewModel:CustomButton Grid.Column="2" Margin="4" ImageSource="{Binding PlayNormal}" ImageSourceHover="{Binding PlayHover}" Height="30" ImageSourcePressed="{Binding PlayPressed}" Command="{Binding Play}" Visibility="{Binding MediaVisibility}"></localViewModel:CustomButton>
+            <localViewModel:CustomButton Grid.Column="3" Margin="4" ImageSource="/Resources/fasterButton.jpg" ImageSourceHover="/Resources/fasterButtonHover.jpg" Height="30" ImageSourcePressed="/Resources/fasterButtonPressed.jpg" Command="{Binding MoveForwards}" Visibility="{Binding MediaVisibility}"></localViewModel:CustomButton>
+            <localViewModel:CustomButton Grid.Column="2" Margin="0" ImageSource="/Resources/Download.png" ImageSourceHover="/Resources/DownloadHover.png" Height="35" ImageSourcePressed="/Resources/DownloadPressed.png" Command="{Binding Download}"  Visibility="{Binding YoutubeVisibility}">
+                <localViewModel:CustomButton.Resources>
+                    <Style TargetType="{x:Type ToolTip}" BasedOn="{StaticResource CustomizedToolTip}"/>
+                </localViewModel:CustomButton.Resources>
+                <localViewModel:CustomButton.ToolTip>
+                    <TextBlock Foreground="White">Download Youtube Video.</TextBlock>
+                </localViewModel:CustomButton.ToolTip>
+            </localViewModel:CustomButton>
+
+            <StackPanel Grid.Column="4" Margin="0,0,25,0" HorizontalAlignment="Right" Orientation="Horizontal" Visibility="{Binding MediaVisibility}">
+                <localViewModel:CustomButton x:Name="Speaker" Margin="0,0,10,0" Height="30" Width="30" Command="{Binding Mute}" ImageSource="{Binding SpeakerNormal}" ImageSourceHover="{Binding SpeakerHover}" ImageSourcePressed="{Binding SpeakerPressed}">
+                </localViewModel:CustomButton>
+                <Slider Style="{StaticResource SpeakerSlider}" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Right" Width="120" Margin="0,0,10,0" Value="{Binding Volume}" Maximum="1" IsMoveToPointEnabled="True"></Slider>
+                
+                <!-- Debugger -->
+                <!--<TextBlock VerticalAlignment="Center" Foreground="Yellow" Width="30" >
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}{0} {1}">
+                            <Binding Path="Debugger"/>
+                            <Binding Path="TopPanelVisibility"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>-->
+
+            </StackPanel>
+        </Grid>
+
+        <Polygon Name="speedOptions1" Points="90,20 110,0 130,20" Stroke="Black" Fill="Black" Grid.Row="1" Visibility="{Binding ShowSpeedOptions}"/>
+        <ListBox Name="speedOptions2" Grid.Row="1" Width="50" Margin="0,20,30,0" VerticalAlignment="Top" Background="Black" ItemsSource="{Binding ListOfSpeeds}" SelectedItem="{Binding ChosenSpeed}" Visibility="{Binding ShowSpeedOptions}" SelectionChanged="ListBox_SelectionChanged" Foreground="White">
+        </ListBox>
+
+        <ContentControl Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="2" Visibility="{Binding YoutubeVisibility}" Content="{Binding Youtube}"></ContentControl>
+
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="0,0,100,0" Width="100" Height="20" Foreground="LightGreen" Text="{Binding Instruction}" Visibility="{Binding YoutubeVisibility}"></TextBlock>
+        
+    </Grid>
+</Window>
