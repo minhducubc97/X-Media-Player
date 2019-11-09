@@ -51,7 +51,3 @@ The libraries used in this project:
 - [MVVMLightLibs](http://www.mvvmlight.net/)
 - [NReco](https://www.nrecosite.com/)
 - [YoutubeExplode](https://www.tyrrrz.me/Projects/YoutubeExplode)
-
-## Source code:
-
-If you would like to see my source code, please send me an email at ngminhduc20111997@gmail.com
